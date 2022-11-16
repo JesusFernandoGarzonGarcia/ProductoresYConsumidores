@@ -39,7 +39,7 @@ public class ViewsPrincipal extends JFrame{
 	 */
 	private void init(ActionListener listener) {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setSize(new Dimension(520,500));
+		setSize(new Dimension(550,550));
 		setBackground(Color.WHITE);
 		setLocationRelativeTo(rootPane);
 		setLayout(new BorderLayout());

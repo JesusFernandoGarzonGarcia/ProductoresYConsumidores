@@ -89,7 +89,7 @@ public class DAO {
 		datosLLenosEnBuffer = dataAddBuffer;
 		productorActual.setCamposAintroducir(dataAddBuffer);
 		System.out.println(" datos llenos "+datosLLenosEnBuffer );
-		for (int i = 0; i < datosLLenosEnBuffer; i++) {
+		for (int i = 0; i < buffer.length; i++) {
 			if (i<=datosLLenosEnBuffer) {
 				buffer[i] ="T";
 			}else {
@@ -110,7 +110,7 @@ public class DAO {
 			}
 
 		}
-		return vacio;
+		return vacio-1;
 	}
 
 	/**
@@ -124,7 +124,7 @@ public class DAO {
 				lleno++;
 			}
 		}
-		return lleno;
+		return lleno-1;
 	}
 
 	/**
@@ -140,7 +140,7 @@ public class DAO {
 		int dataAddBuffer = (int) (Math.random()*camposBufferLLenos()+1);
 		consumidorActual.setCamposAintroducir(dataAddBuffer);
 		datosLLenosEnBuffer -= dataAddBuffer;
-		System.out.println("datos llenos " +datosLLenosEnBuffer);
+		System.out.println("datos resultantes " +datosLLenosEnBuffer);
 
 		for (int i = 0; i<buffer.length; i++) {
 			if (i<datosLLenosEnBuffer) {
